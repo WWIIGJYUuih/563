@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جنگ جهانی دوم: تاریخچه، رهبران و حمله متفقین به ایران</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        h2 {
+            color: #b21f1f;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .timeline-year {
+            background-color: #1a2a6c;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            min-width: 100px;
+            text-align: center;
+            margin-left: 20px;
+        }
+        
+        .timeline-content {
+            flex: 1;
+        }
+        
+        .leaders-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .leader-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .leader-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .leader-header {
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        
+        .axis {
+            background: linear-gradient(135deg, #b21f1f, #fdbb2d);
+        }
+        
+        .allies {
+            background: linear-gradient(135deg, #1a2a6c, #4A90E2);
+        }
+        
+        .iran {
+            background: linear-gradient(135deg, #008000, #32CD32);
+        }
+        
+        .leader-name {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+        
+        .leader-role {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-top: 1px solid #eee;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #1a2a6c;
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        .iran-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            border-right: 5px solid #008000;
+        }
+        
+        .iran-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .iran-event {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-right: 3px solid #008000;
+        }
+        
+        .iran-event h4 {
+            color: #008000;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .leaders-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+            }
+            
+            .timeline-year {
+                margin-left: 0;
+                margin-bottom: 10px;
+                align-self: flex-start;
+            }
+            
+            .iran-timeline {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>جنگ جهانی دوم</h1>
+            <p class="subtitle">بزرگترین جنگ تاریخ بشر که از سال ۱۹۳۹ تا ۱۹۴۵ ادامه یافت د</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="timeline">
+            <h2>مهم ترین رویدادهای جنگ جهانی دوم</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">۱۹۳۹</div>
+                <div class="timeline-content">
+                    <h3>آغاز جنگ</h3>
+                    
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">۱۹۴۱</div>
+                <div class="timeline-content">
+                    <h3>حمله متفقین به ایران</h3>
+                    
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">۱۹۴۱</div>
+                <div class="timeline-content">
+                    <h3>حمله به شوروی و پرل هاربر</h3>
+                    
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">۱۹۴۲-۱۹۴۳</div>
+                <div class="timeline-content">
+                    <h3>تغییر موازنه جنگ</h3>
+                   
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">۱۹۴۴</div>
+                <div class="timeline-content">
+                    <h3>روز دی و پیشروی متفقین</h3>
+                   
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">۱۹۴۵</div>
+                <div class="timeline-content">
+                    <h3>پایان جنگ</h3>
+                   
+                </div>
+            </div>
+        </section>
+        
+      
+                </div>
+            </div>
+        </section>
+        
+        <h2>رهبران اصلی جنگ جهانی دوم</h2>
+        
+        <div class="leaders-section">
+            <!-- رهبران متحدین -->
+            <div class="leader-card">
+                <div class="leader-header axis">
+                    <div class="leader-name">آدولف هیتلر</div>
+                    <div class="leader-role">پیشوای آلمان نازی</div>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-value">۱۹۳۳-۱۹۴۵</div>
+                        <div class="stat-label">دوره حکومت</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">آلمان</div>
+                        <div class="stat-label">کشور</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-header axis">
+                    <div class="leader-name">بنیتو موسولینی</div>
+                    <div class="leader-role">رهبر ایتالیا</div>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-value">۱۹۲۲-۱۹۴۳</div>
+                        <div class="stat-label">دوره حکومت</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">ایتالیا</div>
+                        <div class="stat-label">کشور</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- رهبران متفقین -->
+            <div class="leader-card">
+                <div class="leader-header allies">
+                    <div class="leader-name">وینستون چرچیل</div>
+                    <div class="leader-role">نخست وزیر بریتانیا</div>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-value">۱۹۴۰-۱۹۴۵</div>
+                        <div class="stat-label">دوره حکومت</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">بریتانیا</div>
+                        <div class="stat-label">کشور</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-header allies">
+                    <div class="leader-name">ژوزف استالین</div>
+                    <div class="leader-role">رهبر شوروی</div>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-value">۱۹۲۴-۱۹۵۳</div>
+                        <div class="stat-label">دوره حکومت</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">شوروی</div>
+                        <div class="stat-label">کشور</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- رهبران ایران -->
+            <div class="leader-card">
+                <div class="leader-header iran">
+                    <div class="leader-name">رضا شاه پهلوی</div>
+                    <div class="leader-role">پادشاه ایران</div>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-value">۱۹۲۵-۱۹۴۱</div>
+                        <div class="stat-label">دوره حکومت</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">ایران</div>
+                        <div class="stat-label">کشور</div>
+                    </div>
+                </div>
+            </div>
+            
+           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+         
+        </div>
+    </footer>
+</body>
+</html>
