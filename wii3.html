@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حمله متفقین به ایران در جنگ جهانی دوم</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tahoma', 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(to right, #1a3a5f, #2c5282);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .timeline {
+            position: relative;
+            margin: 3rem 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #2c5282;
+            top: 0;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        
+        .timeline-item {
+            padding: 1rem 2rem;
+            position: relative;
+            width: 50%;
+            margin-bottom: 2rem;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            right: 0;
+        }
+        
+        .timeline-item:nth-child(even) {
+            right: 50%;
+        }
+        
+        .timeline-content {
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            top: 15px;
+            transform: rotate(45deg);
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content::after {
+            left: -10px;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content::after {
+            right: -10px;
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+            color: #2c5282;
+            margin-bottom: 0.5rem;
+        }
+        
+        .map-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .map {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .key-figures {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .figure-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .figure-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            background-color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #2c5282;
+        }
+        
+        .consequences {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background-color: #1a3a5f;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                right: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-right: 70px;
+                padding-left: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                right: 0;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content::after {
+                left: -10px;
+            }
+            
+            .timeline-item:nth-child(even) .timeline-content::after {
+                right: auto;
+                left: -10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>حمله متفقین به ایران در جنگ جهانی دوم</h1>
+            <p class="subtitle">۲۵ اوت تا ۱۷ سپتامبر ۱۹۴۱</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="intro">
+            <h2>مقدمه</h2>
+            <p>حمله متفقین به ایران در جنگ جهانی دوم که با نام عملیات نگاه نیز شناخته می‌شود، در ۲۵ اوت ۱۹۴۱ آغاز شد. این حمله توسط نیروهای شوروی از شمال و نیروهای بریتانیایی از جنوب و غرب انجام گرفت. هدف اصلی این عملیات، تضمین دسترسی به منابع نفتی ایران و ایجاد یک کریدور امن برای ارسال کمک‌های نظامی به شوروی بود.</p>
+        </section>
+        
+        <section class="timeline">
+            <h2>گاه‌شمار وقایع</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">۲۵ اوت ۱۹۴۱</div>
+                    <h3>آغاز حمله</h3>
+                    <p>نیروهای شوروی از شمال و نیروهای بریتانیایی از جنوب و غرب به ایران حمله کردند.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">۲۸ اوت ۱۹۴۱</div>
+                    <h3>سقوط تبریز</h3>
+                    <p>شهر تبریز به دست نیروهای شوروی سقوط کرد.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">۲۹ اوت ۱۹۴۱</div>
+                    <h3>اشغال کرمانشاه</h3>
+                    <p>نیروهای بریتانیایی شهر کرمانشاه را تصرف کردند.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">۱۷ سپتامبر ۱۹۴۱</div>
+                    <h3>پایان درگیری‌ها</h3>
+                    <p>پس از تسلیم ارتش ایران، درگیری‌ها به پایان رسید و ایران به مناطق تحت نفوذ شوروی و بریتانیا تقسیم شد.</p>
+                </div>
+            </div>
+        </section>
+        
+       
+            <h2 style="grid-column: 1 / -1;">شخصیت‌های کلیدی</h2>
+            
+            <div class="figure-card">
+                <div class="figure-image">ر</div>
+                <h3>رضاشاه پهلوی</h3>
+                <p>پادشاه ایران در زمان حمله متفقین</p>
+            </div>
+            
+            <div class="figure-card">
+                <div class="figure-image">م</div>
+                <h3>محمدعلی فروغی</h3>
+                <p>نخست‌وزیر ایران که مذاکرات تسلیم را انجام داد</p>
+            </div>
+            
+            <div class="figure-card">
+                <div class="figure-image">ا</div>
+                <h3>سر آرچیبالد ویول</h3>
+                <p>فرمانده نیروهای بریتانیایی در خاورمیانه</p>
+            </div>
+            
+            <div class="figure-card">
+                <div class="figure-image">د</div>
+                <h3>دیمیتری کوزلوف</h3>
+                <p>فرمانده نیروهای شوروی در عملیات</p>
+            </div>
+        </section>
+        
+        <section class="consequences">
+            <h2>پیامدهای حمله</h2>
+            <ul>
+                <li>تقسیم ایران به مناطق تحت نفوذ شوروی و بریتانیا</li>
+                <li>کناره‌گیری رضاشاه از سلطنت و تبعید او</li>
+                <li>به قدرت رسیدن محمدرضا پهلوی</li>
+                <li>ایجاد کریدور ایرانی برای ارسال کمک‌های نظامی به شوروی</li>
+                <li>قحطی و مشکلات اقتصادی در ایران</li>
+                <li>کنفرانس تهران در سال ۱۹۴۳ با حضور چرچیل، روزولت و استالین</li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+           
+        </div>
+    </footer>
+</body>
+</html>
